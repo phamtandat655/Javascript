@@ -1,0 +1,82 @@
+/* :root {
+    --primary-color : 
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgreen;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 400px;
+
+    border-radius: 5px;
+    padding: 15px;
+
+    background-color: aliceblue;
+}
+
+.input--wrap {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-search {
+    padding: 5px 5px 5px 10px;
+    outline: none;
+    border: none;
+    flex: 1;
+
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.tag {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px 2px;
+
+    background-color: aquamarine;
+}
+
+.tag i {
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+
+.removeAll {
+    margin-top: 20px;
+}
+
+.removeAll-btn {
+    background-color: aquamarine;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}

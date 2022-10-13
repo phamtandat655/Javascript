@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 6)), url(/Javascript/WeatherForecast/img/hot.png) no-repeat center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.hot {
+    background: linear-gradient(to top , rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.6)),url(/Javascript/WeatherForecast/img/hot.png) no-repeat center/cover;
+}
+
+body.hot #weather {
+    background-image: url(/Javascript/WeatherForecast/img/hot.png);
+}
+
+body.cold {
+    background: linear-gradient(to top , rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.6)),url(/Javascript/WeatherForecast/img/cold.png) no-repeat center/cover;
+}
+
+body.cold #weather{
+    background-image: url(/Javascript/WeatherForecast/img/cold.png);
+}
+
+#weather {
+    width: 350px;
+    height: 600px;
+
+    background: no-repeat center/cover;
+    
+    border: none;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.weather-search {
+    width: 100%;
+
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border-radius: 0 15px 0 15px;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+.weather-search:focus {
+    border-radius: 15px 0 15px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.weather-about {
+    text-align: center;
+}
+
+.name {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.time-wrap {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.temperature {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    padding: 30px 10px;
+    margin: 30px 20px 0 20px;
+    border-radius: 10px;
+
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.short-desc {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.more-desc {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.more-desc div i {
+    margin-bottom: 10px;
+}
+
+.more-desc div {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+}
+
+

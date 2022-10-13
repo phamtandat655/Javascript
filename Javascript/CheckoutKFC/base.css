@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(135deg, #FCBB60 , #FFCC6F);
+}
+body {
+    width: 45rem;
+    min-height: 20rem;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    margin: 10vh auto 0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.img {
+    width: 100%;
+    flex-basis: 8rem;
+    background-color: rgba(255,73,36,0.83);
+    border-radius: 5px 5px 0 0;
+    /* text-align: center; */
+}
+.img img {
+    width: 120px;
+    height: 120px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    z-index: 2;
+}
+.order {
+    flex: 1;
+    background: white;
+    border-radius: 0 0 5px 5px;
+}
+.order__heading {
+    margin-top: 60px;
+    padding: 0 290px 0 310px;
+    font-size: 1.4rem;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.food {
+    list-style: none;
+}
+.food-item {
+    margin-bottom: 10px;
+    display: flex;
+}
+.food-item span {
+    display: flex;
+}
+.food--name {
+    font-size: 1.2rem;
+    flex-basis: 20rem;
+    margin-left: 20px;
+    font-weight: 550;
+}
+.icon {
+    padding: 2px 7px;
+    background: gray;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.quantity {
+
+}
+.price {
+    margin-left: 150px;
+}
+.add__btn {
+    margin: 20px 0 0 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* sumary */
+.order__sumary {
+    margin: 50px 20px 0 20px;
+    background: rgb(211,211,211);
+}
+.order__sumary-about {
+    padding: 10px 10px 10px 10px;
+}
+.order__sumary-about p {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.order__sumary-about p span {
+    float: right;
+}
+
+.check {
+    margin: 20px;
+    text-align: center;
+}
+.check button {
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(255,73,36,0.83);
+    border-color: white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}

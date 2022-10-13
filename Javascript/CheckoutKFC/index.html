@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Javascript/CheckoutKFC/base.css">
+    <title>Check out KFC</title>
+</head>
+<body>
+    <div class="img"><img src="/Javascript/CheckoutKFC/KFC_Logo_2006-694x700.png" alt=""></div>
+    <div class="order">
+        <h3 class="order__heading">Your order from KFC</h3>
+        <ul class="food">
+            <li class="food-item">
+                <span class="food--name">British Pizza | Medium </span>
+                <span class="quantity-span">
+                    <button id="reduce" class="icon">-</button>
+                    <p id="Quantity" class="quantity">1</p>
+                    <button id="add" class="icon" >+</button>
+                </span>
+                <span class="price-span">
+                    <p class="price">7.99$</p>
+                    <button id="remove" class="icon">X</button>
+                </span>
+            </li>
+        </ul>
+
+        <button id="btn-add" class="add__btn">Add a beverage</button>
+
+        <div class="order__sumary">
+            <div class="order__sumary-about">
+                <p>
+                    Subtotal
+                    <span id= "Subtotal">$0</span>
+                </p>
+            </div>
+            <div class="order__sumary-about">
+                <p>
+                    Shipping
+                    <span id="shipping">$0</span>
+                </p>
+            </div>
+            <div class="order__sumary-about">
+                <p>
+                    Total(TVA incl.)
+                    <span id="Total">$0</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="check">
+            <button id="check-btn">CHECK OUT</button>
+        </div>
+    </div>
+    <script src="/Javascript/CheckoutKFC/base.js"></script>
+</body>
+</html>

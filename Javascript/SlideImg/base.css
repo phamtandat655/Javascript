@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    margin: 150px auto 0;
+}
+.wrap {
+    width: 400px;
+    height: 400px;
+    flex: 1;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: all 1s;
+}
+.slide {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.control {
+    width: 100px;
+}
